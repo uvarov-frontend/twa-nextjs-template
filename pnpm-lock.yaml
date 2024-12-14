@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@twa-dev/sdk':
+        specifier: ^8.0.1
+        version: 8.0.1(react@19.0.0)
       next:
         specifier: 15.1.0
         version: 15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -343,6 +346,14 @@ packages:
 
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
+
+  '@twa-dev/sdk@8.0.1':
+    resolution: {integrity: sha512-mBR5dnAvSyRx7YGt/n0Owq1z8MsWhsuh76JD1abV0TZWHi6RQSPXBNAG0XMOMO7Vf5hsAwUTul+x54vf43Ku0A==}
+    peerDependencies:
+      react: ^18.3.1
+
+  '@twa-dev/types@8.0.1':
+    resolution: {integrity: sha512-/m3KiULhI4fdeoI5K9Op9jFbmdPjxaAdrZBJ3BA1fS4lVmKCx9XuLTeumzYeuOW577eHAJWaZkcSpWBOss4Epw==}
 
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
@@ -1972,6 +1983,13 @@ snapshots:
   '@swc/helpers@0.5.15':
     dependencies:
       tslib: 2.8.1
+
+  '@twa-dev/sdk@8.0.1(react@19.0.0)':
+    dependencies:
+      '@twa-dev/types': 8.0.1
+      react: 19.0.0
+
+  '@twa-dev/types@8.0.1': {}
 
   '@types/estree@1.0.6': {}
 
