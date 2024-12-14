@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-import ProviderTWA from '@/components/TWA/Provider';
+import ProviderSDK from '@/components/ProviderSDK';
 
 import './globals.css';
 
@@ -12,7 +12,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="min-h-screen">
-        <ProviderTWA>{children}</ProviderTWA>
+        <ProviderSDK>{children}</ProviderSDK>
       </body>
     </html>
   );
