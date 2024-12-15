@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 
-import ProviderSDK from '@/components/ProviderSDK';
+import { WebAppStoreProvider } from '@/components/WebAppStoreProvider';
 
 import './globals.css';
 
@@ -12,7 +13,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="min-h-screen">
-        <ProviderSDK>{children}</ProviderSDK>
+        <WebAppStoreProvider>{children}</WebAppStoreProvider>
+        <Script id="TelegramWebApp" src="/telegram-web-app.js" strategy="beforeInteractive" />
       </body>
     </html>
   );

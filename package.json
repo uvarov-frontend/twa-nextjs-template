@@ -14,11 +14,12 @@
     "prettier:fix": "prettier . -w"
   },
   "dependencies": {
-    "@twa-dev/sdk": "^8.0.1",
+    "@twa-dev/types": "^8.0.1",
     "next": "15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "sharp": "^0.33.5"
+    "sharp": "^0.33.5",
+    "zustand": "^5.0.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
